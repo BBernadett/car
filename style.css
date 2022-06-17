@@ -1,0 +1,618 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Manrope:wght@400;700&family=Poppins:wght@400;700&family=Rajdhani:wght@600;700&display=swap');
+/*font-family: 'Fraunces', serif;
+font-family: 'Manrope', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Rajdhani', sans-serif;*/
+
+html {
+    scroll-behavior: smooth;
+    font-size: 20px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+
+    color: #333
+}
+
+.container {
+    max-width: 1440px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.container ul li::marker {
+    color: var(--dark-orange);
+}
+
+.row > div {
+    margin: 0 auto;
+}
+.row a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.row ul li{
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    /*list-style-type: none;*/
+}
+
+.row ul {
+    padding: 0;
+    margin-left: 0;
+}
+footer {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,1eb4e6+51,7db9e8+100 */
+background: var(--light-blue); /* Old browsers */
+background: -moz-linear-gradient(left, var(--light-blue) 0%, var(--dark-blue) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, var(--light-blue) 0%, var(--dark-blue) 100%) ; /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  var(--light-blue) 0%, var(--dark-blue) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 */
+padding: 1rem 0;
+font-size: smaller;
+color: #fff;
+}
+#signup .col-1-2 form {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,1eb4e6+51,7db9e8+100 */
+background: var(--light-blue); /* Old browsers */
+background: -moz-linear-gradient(left, var(--light-blue) 0%, var(--dark-blue) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, var(--light-blue) 0%, var(--dark-blue) 100%) ; /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  var(--light-blue) 0%, var(--dark-blue) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 */
+padding: 1rem;
+color: #fff;
+border: var(--corner);
+box-shadow: var(--shadow);
+}
+ul {
+    padding-left: 20px;
+}
+
+:root  {
+    --light-blue: #1eb4e6;
+    --dark-blue: #1d5da7;
+    --light-orange: #f2be3d;
+    --dark-orange: #f8694c;
+    --grey: #f5f5f5;
+    --shadow: 0 1px 3px rgba(0,0,0,.2);
+    --corner: 5px;
+}
+@media only screen and (min-width:768px) and (max-width:1024px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+
+img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    line-height: 0;
+    vertical-align: top;
+    max-width: 100%;
+    height: auto;
+}
+
+header {
+    background: #fff;
+    box-shadow: var(--shadow);
+    z-index: 3;
+}
+#top {
+    border-bottom: solid 1px #999;
+    padding: 0.5rem 0;
+}
+#head {
+    padding: 1.5rem;
+}
+#head .container{
+    display: flex;
+    justify-content: space-between; /*két szélére megy az két elem*/
+    align-items: center;/*függőlegesen középre*/
+    flex-wrap: nowrap;
+}
+#top ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
+#top ul li {
+        display: inline-block;
+
+}
+
+#top ul li a{
+    color: inherit;
+    text-decoration: none;
+    font-size: smaller;
+    color: #999;
+}
+#logo a {
+    display: block;
+}
+#logo svg path {
+    fill: #333;
+}
+#logo-icon {
+    fill: var(--dark-blue)!important;
+}
+h1, h2, h3, h4 {
+    font-family: 'Rajdhani', sans-serif;
+}
+
+h1,h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+h3 {
+    font-size: 1.5rem;
+}
+
+#hero {
+    background: url('anyagok/hero.jpg') top right no-repeat;
+    background-size: auto 100%;
+    padding: 6vw 0;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    
+}
+#hero::before {
+    content: "";
+    top: -20vw;
+    left: -30vw;
+    position: absolute;
+    display: inline-block;
+    height: 80vw;
+    width: 80vw;
+    line-height: 1.5rem;
+    border-radius: 50%;
+    z-index: 1;
+      /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,1eb4e6+51,7db9e8+100 */
+background: var(--light-blue); /* Old browsers */
+background: -moz-linear-gradient(left, var(--light-blue) 40%, var(--dark-blue) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, var(--light-blue) 40%, var(--dark-blue) 100%) ; /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  var(--light-blue) 40%, var(--dark-blue) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 */
+
+}
+.hero-txt {
+    position: relative;
+    max-width: 34rem;
+    z-index: 2;
+}
+
+/*lista elemek form*/
+a {
+    color: #fff;
+}
+ul li:maker {
+    color: var(--dark-orange);
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+nav ul li a{
+    display: block;
+    color: inherit;
+    padding: 0.5rem 1vw;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: smaller;
+}
+
+nav input[type=checkbox] {
+    display: none;
+}
+
+
+nav input[type=checkbox]+label::before,
+nav input[type=checkbox]:checked + label::before {
+    content: none;
+}
+ul li{
+    margin-left: 0;
+}
+
+ol {
+    counter-reset: li-counter;
+    padding: 0;
+    
+}
+ol li{
+    counter-increment: li-counter;
+    /*list-style-type: none;*/
+    margin-bottom: 0.5rem;
+}
+ol li:before{
+    content: counter(li-counter) ".";
+    background: var(--dark-orange);
+    width: 1.5rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    border-radius: 50%;
+    text-align: center;
+    color: inherit;
+    font-size: smaller;
+    margin-right: 0.75rem;
+    display: inline-block;
+    color: #fff;
+
+}
+
+.align-center {
+    text-align: center; /* egyszerű szöveg középre igazítás */
+}
+
+.vertical-center {
+    align-items: center; /* függőleges középre igazítás flex elemeken */
+}
+
+.no-margin {
+    margin: 0; /* Ne legyen az elemnek margója */
+}
+
+.narrow {
+    max-width: 50rem; /* keskenyebb tartalom */
+    margin: 0 auto;
+}
+
+.round {
+      border-radius: 50%; /* lekerekített */
+}
+
+.small-text {
+    font-size: smaller; /* kisebb szöveg */
+}
+.button {
+    display: inline-block;
+    padding: 0.5rem 1;
+    color: #fff;
+    font-weight: bolt;
+    border-radius: 3rem;
+    box-shadow: var(--shadow);
+    text-decoration: none;
+    padding: 0.5rem 1vw;
+    font-weight: bold;
+    background-image: linear-gradient(to right top, #f2be3d, #f8a939, #fb943c, #fb7f43, #f8694c);
+}
+.col-1-2 {
+    text-align: center;
+    font-size: smaller;
+    margin: 0 15px 30px 15px;
+    padding: 15px;
+    width: 100%;
+}
+
+.cta > div {
+    text-align: center;
+    font-size: smaller;
+    margin: 0 auto
+    padding: 15px;
+    width: 100%;
+}
+
+
+#main-menu {
+    position: relative;
+}
+section p {
+    text-align: left;
+}
+.cta {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+.cta-1-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+.cta-1-3{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+.form-1-2{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+
+#signup form .right {
+        padding-right: 0;
+        text-align: end;
+    }
+/*reszp*/
+@media only screen and (max-width:1240px) {
+    #head .container {
+        display: block;
+    }
+   .hamburger {
+    position: absolute;
+    right: 0;
+    top: -2.5rem;
+
+   }
+   
+    nav ul {
+        display: none;
+    }    
+    
+    nav ul li {
+        display: block;
+    }
+    nav ul li a {
+        border-bottom: solid 1px rgba(255, 255, 255, .3);
+    }
+    nav ul li:last-of-type a {
+        border-bottom: none;
+    }
+    label {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px;
+        width: 40px;
+        height: 40px;
+        border: 3px solid var(--dark-orange);
+        border-radius: 50%;
+    }
+    input[type=checkbox] + label {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border: 3px solid var(--dark-orange);
+        padding: 10px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+    label span {
+        background: var(--dark-orange);
+        height: 3px;
+        width: 100%;
+        display: block;
+    }
+    .hamburger span {
+        height: 3px;
+        width: 100%;
+        background: var(--dark-orange);
+        border-radius: 5px;
+        opacity: 1;
+        transition: all 0.3s ease-in-out;
+    } 
+    input[type="checkbox"]:checked ~ ul {
+        display: block;
+    }
+    input[type="checkbox"]:checked + label {
+        justify-content: center;
+    }
+
+    input[type="checkbox"]:checked + label span:nth-of-type(1), 
+    input[type="checkbox"]:checked + label span:last-of-type {
+        opacity: 0;
+    }
+}
+/*tablet*/
+@media only screen and (min-width:768px) and  (max-width:1300px) {
+    #top ul li {
+        display: block;
+        width: 50%;
+    }
+    footer container ul {
+        margin: 0 ;
+    }
+    .cta-1-2 {
+        grid-template: none;
+    }
+    .col-1-2 {
+        margin: 0;
+    }
+    #gdpr {
+        display: inline;
+        border: none;
+    }
+    input[id=gdpr] + label {
+        border: none;
+        display: inline;
+    }
+  
+    }
+    
+    @media only screen and (max-width:767px) {
+        html {
+            font-size: 16px;
+        }
+       
+        #top ul li {
+            display: block;
+            width: 100%;
+        }
+        h1,h2 {
+            font-size: 1.75rem;
+        }
+        ul {
+            padding: 15px;
+        }
+        #hero .container{
+            padding: 0;
+        }
+        #hero {
+            background: url('anyagok/hero.jpg') bottom right no-repeat;
+            background-size: auto 80vw;
+            padding: 0 0 80vw 0; 
+        }
+        #hero::before {
+            content: none;
+        }
+        .hero-txt {
+            padding: 1rem 15px;
+            overflow: hidden;
+            text-align: center;
+            width: 100%;
+            max-width: 100%;
+            background: var(--light-blue); /* Old browsers */
+            background: -moz-linear-gradient(left, var(--light-blue) 40%, var(--dark-blue) 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(left, var(--light-blue) 40%, var(--dark-blue) 100%) ; /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to right,  var(--light-blue) 40%, var(--dark-blue) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 */
+        
+        }
+        .cta {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .cta-1-2 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+    }
+    #para {
+        text-align: left;
+    }
+        section p {
+            text-align: center;
+        }
+        .col-1-2 {
+            text-align: left;
+            margin: 0 auto;;
+            padding: 0px;
+            width: 100%;
+        }
+        .form-1-2 {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        #signup form .right {
+            text-align: start;
+        }
+        #gdpr {
+            display: inline;
+            border: none;
+        }
+        input[id=gdpr] + label {
+            border: none;
+            display: inline;
+        }
+        textarea {
+            margin-top: 15px;
+        }
+    }    
+/*tablet*/
+@media only screen and (max-widt: 480px) {
+    .form-1-2 {
+     grid-template-columns: repeat(1, 1fr);
+    } 
+    .cta-1-3 {
+     display: block;
+    } 
+ }
+
+
+section li {
+    text-align: left;
+}
+
+#signup .col-1-2 form {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,1eb4e6+51,7db9e8+100 */
+background: var(--light-blue); /* Old browsers */
+background: -moz-linear-gradient(left, var(--light-blue) 0%, var(--dark-blue) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, var(--light-blue) 0%, var(--dark-blue) 100%) ; /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  var(--light-blue) 0%, var(--dark-blue) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 */
+padding: 2rem;
+color: #fff;
+border: var(--corner);
+box-shadow: var(--shadow);
+line-height: 10px;
+border-radius: 10px;
+}
+
+
+input[type="text"], input[type="tel"], input[type="email"] {
+    height: 35px;
+    background: #fff;
+    border-radius: 10px;
+}
+#select1, #select2 {
+    height: 35px;
+    background: #fff;
+    border-radius: 10px;
+   
+}
+
+
+/* Kiválasztott elemre külön tudunk hivatkozni így:*/ 
+input[type="email"]:checked + label:before {
+    background: #33cc99;
+}
+
+/*melyik mezőn állok megjelölése*/
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none !important; /* böngésző tulajdonságot tiltsa le */
+    border-color: var(--dark-blue);
+}
+
+textarea {
+    width: 100%;
+    padding: 0 0.5rem;
+    border-radius: 10px;
+}
+:root {
+    --form-ui-color: #ff6d51;
+    --form-ui-bg: #fff;
+    --form-size: 0.5rem;
+    --form-border-radius: 25px;
+    --form-box-shadow: none;
+}
+#signup .row form .col-1-2{
+   text-align: left;
+  
+}
+
+#signup input {
+    width: 100%;  
+}
+#signup form .left {
+    padding-left: 0;
+    text-align: start;
+}
+
+.gdpr1 {
+    display: block;
+}
+#gdpr {
+    width: auto!important;
+}
+input[type="submit"] {
+    font-size: 1rem;
+    color: #fff;
+}
+
+.grey-bg {
+    background:var(--grey);
+    padding: 3rem 0;
+}
+
