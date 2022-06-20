@@ -90,7 +90,9 @@ ul {
         font-size: 18px;
     }
 }
-
+#categories .cta > div {
+    margin-bottom: 3rem;
+}
 
 img {
     margin: 0;
@@ -291,7 +293,7 @@ ol li:before{
     border-radius: 3rem;
     box-shadow: var(--shadow);
     text-decoration: none;
-    padding: 0.5rem 1vw;
+    padding: 0.5rem 4vw;
     font-weight: bold;
     background-image: linear-gradient(to right top, #f2be3d, #f8a939, #fb943c, #fb7f43, #f8694c);
 }
@@ -302,22 +304,62 @@ ol li:before{
     padding: 15px;
     width: 100%;
 }
+.events li {
+    list-style-type: none;
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+    background: url('anyagok/calendar.svg') top 0.25rem left no-repeat;
+    background-size: 1.5rem auto;
+}
+.events {
+    margin-left: 0;
+}
 
 .cta > div {
     text-align: center;
     font-size: smaller;
-    margin: 0 auto
-    padding: 15px;
+    margin: 0 auto;
+    padding: 1.5rem 1rem 1rem; 
     width: 100%;
+    background: #fff;
+    border-radius: var(--corner);
+    box-shadow: var(--shadow);
+    position: relative;
 }
-
+.cta > h3 {
+    margin-bottom: 0.75rem;
+}
+.icon {
+    position: absolute;
+    top: -2.5rem;
+    left: 50%;
+    margin-left: -2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    background: var(--light-blue); /* Old browsers */
+    background: -moz-linear-gradient(left, var(--light-blue) 40%, var(--dark-blue) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, var(--light-blue) 40%, var(--dark-blue) 100%) ; /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  var(--light-blue) 40%, var(--dark-blue) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 */
+}
+.icon svg {
+    width: 3rem;
+    height: 3rem;
+}
+.icon svg path{
+    fill: #fff;
+}
 
 #main-menu {
     position: relative;
 }
-section p {
+/*section p {
     text-align: left;
-}
+}*/
 .cta {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -613,6 +655,9 @@ input[type="submit"] {
 
 .grey-bg {
     background:var(--grey);
-    padding: 3rem 0;
+    padding: 4rem 0;
+}
+.grey-bg:last-of-type {
+    margin-bottom: 0;
 }
 
